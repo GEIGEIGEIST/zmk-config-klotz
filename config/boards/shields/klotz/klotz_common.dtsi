@@ -1,0 +1,41 @@
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+	chosen {
+		zmk,kscan = &kscan0;
+		zmk,matrix_transform = &default_transform;
+	};
+
+	kscan0: kscan {
+		compatible = "zmk,kscan-gpio-matrix";
+		label = "KSCAN";
+
+		diode-direction = "col2row";		
+	};
+
+	left_encoder: encoder_left {
+		compatible = "alps,ec12";
+		label = "LEFT_ENCODER";
+		resolution = <4>;
+		status = "disabled";
+	};
+
+	right_encoder: encoder_right {
+		compatible = "alps,ec12";
+		label = "RIGHT_ENCODER";
+		resolution = <4>;
+		status = "disabled";
+	};
+
+	sensors {
+		compatible = "zmk,keymap-sensors";
+		sensors = <&left_encoder &right_encoder>;
+	};
+
+};
