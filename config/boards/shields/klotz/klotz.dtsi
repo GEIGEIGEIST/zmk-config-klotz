@@ -47,7 +47,7 @@
 		status = "disabled";
 	};
 
-	&right_encoder: encoder_right {
+	right_encoder: encoder_right {
 		compatible = "alps,ec12";
 		label = "RIGHT_ENCODER";
 		a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
