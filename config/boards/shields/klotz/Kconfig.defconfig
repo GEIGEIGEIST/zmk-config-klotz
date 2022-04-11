@@ -1,7 +1,7 @@
 if SHIELD_KLOTZ_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "KLOTZ"
+    default "Klotz"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
