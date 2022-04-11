@@ -55,8 +55,8 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
-    &kp A       &kp R       &kp S       &hm LSHFT T &kp D           &kp H       &hm RSHFT N &kp E       &kp I       &kp O
+    &bt BT_CLR  &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
+    &kp A       &kp R       &kp S       &hm LSHFT T &kp D           &kp H       &hm RSHFT N &kp E       &kp I       &bt BT_CLR
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH
                                         &kp TAB     &lt NAV SPACE   &lt SYM RET &kp BSPC    
                         >;
