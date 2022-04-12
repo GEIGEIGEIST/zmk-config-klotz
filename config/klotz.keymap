@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
+#include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
 #define NAV  1
@@ -55,8 +55,8 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &bt BT_CLR  &out OUT_BLE &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &out OUT_BLE       &bt BT_CLR
-    &kp A       &kp R       &kp S       &hm LSHFT T &kp D           &kp H       &hm RSHFT N &kp E       &kp I       &bt BT_CLR
+    &bt BT_CLR  &out OUT_BLE &kp F       &kp P       &kp G           &kp J       &kp L       &kp U      &out OUT_BLE       &bt BT_CLR
+    &kp A       &kp R       &kp S       &hm LSHFT T &kp D           &kp H       &hm RSHFT N &kp E       &kp I       &kp O
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH
                                         &kp TAB     &lt NAV SPACE   &lt SYM RET &kp BSPC    
                         >;
