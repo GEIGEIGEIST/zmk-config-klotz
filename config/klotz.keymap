@@ -55,7 +55,7 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &bt BT_CLR  &out OUT_BLE &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &out OUT_BLE       &kp SEMI
+    &bt BT_CLR  &out OUT_BLE &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &out OUT_BLE       &bt BT_CLR
     &kp A       &kp R       &kp S       &hm LSHFT T &kp D           &kp H       &hm RSHFT N &kp E       &kp I       &bt BT_CLR
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH
                                         &kp TAB     &lt NAV SPACE   &lt SYM RET &kp BSPC    
