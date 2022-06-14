@@ -50,7 +50,7 @@
                 = <&macro_press &kp LSHFT>
                 , <&macro_tap &kp N2>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp g &kp i &kp f>
+                , <&macro_tap &kp G &kp I &kp F>
                 ;
         };
     };
