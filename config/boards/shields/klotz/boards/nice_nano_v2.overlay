@@ -1,0 +1,25 @@
+#include <dt-bindings/led/led.h>
+
+&pwm0 {
+    status = "okay";
+    ch0-pin = <20>;
+    /* ch0-inverted; */
+};
+
+/ {
+    backlight: pwmleds {
+        compatible = "pwm-leds";
+        label = "Backlight LEDs";
+        pwm_led_0 {
+            pwms = <&pwm0 20>;
+            label = "Backlight LED 0";
+        };
+    };
+};
+
+
+/ {
+	chosen {
+		 zmk,backlight = &backlight;
+	};
+};
