@@ -10,7 +10,7 @@
 
 KLOTZ is 34 keys column-staggered split keyboard running [ZMK](https://zmk.dev/). It supports a low profile encoder and three status LEDs on every side.
 
-![KLOR layouts](/docs/images/KLOTZ_layout.svg)
+![KLOTZ layout](/docs/images/KLOTZ_layout.svg)
 
 
 ## HOW TO USE
@@ -21,7 +21,7 @@ KLOTZ is 34 keys column-staggered split keyboard running [ZMK](https://zmk.dev/)
 - `git push` your repo to your fork
 - on the GitHub page of your fork navigate to "Actions"
 - scroll down and unzip the `firmware.zip` archive that contains the latest firmware
-- connect the left half of the KLOR to your PC, press reset twice
+- connect the left half of the KLOTZ to your PC, press reset twice
 - the keyboard should now appear as a mass storage device
 - drag'n'drop the `klotz_left-nice_nano_v2-zmk.uf2` file from the archive onto the storage device
 - repeat this process with the right half and the `klotz_right-nice_nano_v2-zmk.uf2` file.
