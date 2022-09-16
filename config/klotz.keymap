@@ -154,20 +154,20 @@ label= "SYM"                               ;
 label= "ADJ"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-// ┃   RESET   ┃           ┃           ┃           ┃           ┃   ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃           ┃
+// ┃   RESET   ┃           ┃  CYCLE    ┃           ┃           ┃   ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃ BOOTLOAD  ┃           ┃           ┃           ┃           ┃   ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃           ┃
+// ┃ BOOTLOAD  ┃           ┃  LED UP   ┃           ┃           ┃   ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃           ┃  TV LEFT  ┃           ┃           ┃           ┃   ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
+// ┃           ┃  TV LEFT  ┃ LED DOWN  ┃           ┃           ┃   ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃   ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷             ╷        ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
+// ╷            ╷            ╷            ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &reset      &trans       &trans    &trans      &trans          &kp F7      &kp F8      &kp F9      &kp F12     &trans
-    &bootloader &trans       &trans    &trans      &trans          &kp F4      &kp F5      &kp F6      &kp F11     &trans
-    &trans      &kp LG(LEFT) &trans    &trans      &trans          &kp F1      &kp F2      &kp F3      &kp F10     &trans     
+    &reset      &trans       &bl BL_CYCLE &trans      &trans          &kp F7      &kp F8      &kp F9      &kp F12     &trans
+    &bootloader &trans       &bl BL_INC   &trans      &trans          &kp F4      &kp F5      &kp F6      &kp F11     &trans
+    &trans      &kp LG(LEFT) &bl BL_DEC   &trans      &trans          &kp F1      &kp F2      &kp F3      &kp F10     &trans     
                                   &trans      &trans          &trans      &trans
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
