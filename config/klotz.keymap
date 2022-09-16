@@ -126,21 +126,21 @@ label= "NAVI"                              ;
 label= "SYM"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-// ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     Ü     ┃     '     ┃     "     ┃
+// ┃           ┃           ┃           ┃           ┃           ┃   ┃     &     ┃     *     ┃     (     ┃     '     ┃     "     ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃           ┃           ┃           ┃           ┃   ┃     $     ┃     %     ┃      ^    ┃          ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃     \     ┃
+// ┃           ┃           ┃           ┃           ┃           ┃   ┃     !     ┃     @     ┃      £    ┃           ┃     \     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   ADJUST  ┃           ┃   ┃           ┃           ┃   
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp RA(U)   &kp SQT      &kp DQT       
-    &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans       &trans 
-    &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans       &kp BSLH      
-                                        &mo ADJ     &trans          &trans      &trans
+   &trans      &trans      &trans      &trans      &trans          &kp AMPS    &kp STAR    &kp LPAR    &kp SQT     &kp DQT       
+   &trans      &trans      &trans      &trans      &trans          &kp DLLR    &kp PRCNT   &kp CARET   &trans      &trans 
+   &trans      &trans      &trans      &trans      &trans          &kp EXCL    &kp AT      &kp HASH    &trans      &kp BSLH      
+                                       &mo ADJ     &trans          &trans      &trans
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
@@ -164,9 +164,9 @@ label= "ADJ"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &reset      &bt BT_CLR &out OUT_TOG &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
-    &bootloader &bt BT_NXT  &trans      &trans      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
-    &trans      &bt BT_PRV  &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     
+    &reset      &bt BT_CLR  &out OUT_TOG &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
+    &bootloader &bt BT_NXT  &trans       &trans      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
+    &trans      &bt BT_PRV  &trans       &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     
                                         &trans      &trans          &trans      &trans
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
