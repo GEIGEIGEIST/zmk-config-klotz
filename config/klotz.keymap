@@ -170,7 +170,7 @@ label= "ADJ"                               ;
     &trans      &kp C_PREV &kp C_PP   &kp C_NEXT  &trans          &kp F1      &kp F2      &kp F3      &kp F10     &trans     
                                       &trans      &trans          &trans      &trans
                         >;
-            sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT)>;
+            sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
