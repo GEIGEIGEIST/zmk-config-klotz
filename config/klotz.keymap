@@ -127,7 +127,7 @@ label= "NAVI"                              ;
 label= "SYM"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃     {     ┃     }     ┃   ┃     &     ┃     *     ┃     (     ┃     '     ┃     "     ┃
+// ┃    ESC    ┃           ┃           ┃     {     ┃     }     ┃   ┃     &     ┃     *     ┃     (     ┃     '     ┃     "     ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃           ┃           ┃           ┃     [     ┃     ]     ┃   ┃     $     ┃     %     ┃      ^    ┃          ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
@@ -138,7 +138,7 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-   &trans      &trans      &trans      &kp LBRC    &kp RBRC        &kp AMPS    &kp STAR    &kp LPAR    &kp SQT     &kp DQT       
+   &kp ESC     &trans      &trans      &kp LBRC    &kp RBRC        &kp AMPS    &kp STAR    &kp LPAR    &kp SQT     &kp DQT       
    &trans      &trans      &trans      &kp LBKT    &kp RBKT        &kp DLLR    &kp PRCNT   &kp CARET   &kp SQT     &kp DQT 
    &trans      &trans      &trans      &kp LPAR    &kp RPAR        &kp EXCL    &kp AT      &kp HASH    &trans      &kp BSLH      
                                        &mo ADJ     &trans          &trans      &trans
@@ -170,7 +170,7 @@ label= "ADJ"                               ;
     &trans      &kp C_PREV &kp C_PP   &kp C_NEXT  &trans          &kp F1      &kp F2      &kp F3      &kp F10     &trans     
                                       &trans      &trans          &trans      &trans
                         >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
