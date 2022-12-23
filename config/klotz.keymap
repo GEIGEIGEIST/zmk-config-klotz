@@ -106,7 +106,7 @@ label= "NAVI"                              ;
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃    DEL    ┃   LEFT    ┃   DOWN    ┃   RIGHT   ┃  PG DOWN  ┃   ┃     1     ┃     2     ┃     3     ┃     *     ┃     #     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃   ┃    0    ┃     ADJ     ┃  
+//                                     ┃           ┃ PLAY/PAUSE ┃   ┃    0    ┃     ADJ     ┃  
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷            ╷            ╷           ╷            ╷           ╷    ╷           ╷           ╷           ╷               ╷              ╷
@@ -114,7 +114,7 @@ label= "NAVI"                              ;
     &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bl BL_CYCLE     &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_PLUS     &kp EQUAL
     &kp LSHFT   &kp HOME     &kp UP       &kp END      &kp PG_UP        &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS    &kp UNDER
     &kp DEL     &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN        &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MULTIPLY &kp NON_US_HASH
-                                        &trans      &trans          &kp KP_N0   &mo ADJ     
+                                        &trans      &kp C_PP          &kp KP_N0   &mo ADJ     
                         >;
             sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
                 };
