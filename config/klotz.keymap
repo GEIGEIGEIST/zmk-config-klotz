@@ -184,7 +184,7 @@ label= "MED"                               ;
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃           ┃           ┃   MUTE    ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃  REWIND   ┃   MUTE    ┃ F FORWARD ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃           ┃  PREVIOUS ┃ PLAYPAUSE ┃   NEXT    ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -194,7 +194,7 @@ label= "MED"                               ;
 // ╷            ╷          ╷          ╷          ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
     &trans      &trans     &trans     &trans      &trans          &trans     &trans      &trans      &trans       &trans
-    &trans      &trans     &kp C_MUTE &trans      &trans          &trans     &trans      &trans      &trans       &trans
+    &trans      &kp C_RW   &kp C_MUTE &kp C_FF    &trans          &trans     &trans      &trans      &trans       &trans
     &trans      &kp C_PREV &kp C_PP   &kp C_NEXT  &trans          &trans     &trans      &trans      &trans       &trans     
                                       &trans      &trans          &trans     &trans
                         >;
