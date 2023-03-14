@@ -24,7 +24,7 @@
 #define NAV  1
 #define SYM  2
 #define ADJ  3
-#define TVP1 4
+#define MED  4
 #define TVP2 5
 
 &mt {
@@ -45,7 +45,7 @@
             combo_tvp {
                 timeout-ms = <100>;
                 key-positions = <11 12 13>;
-                bindings = <&tog TVP1>;
+                bindings = <&tog TVP2>;
             };
     };
 
@@ -87,7 +87,7 @@ label= "BASE"                              ;
     &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
     &mt LCTRL A  &mt LALT S  &mt LGUI D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RGUI K &mt RALT L  &mt RCTRL SEMI
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH
-                                        &lt NAV TAB &kp SPACE       &kp RET &lt SYM BSPC    
+                                        &lt NAV TAB &lt MED SPACE       &kp RET &lt SYM BSPC    
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
@@ -177,9 +177,9 @@ label= "ADJ"                               ;
 
 
 
-                tvp1_layer {
+                media_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "TVP"                               ;
+label= "MED"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 // ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 // ┃ NEXT FILE ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
