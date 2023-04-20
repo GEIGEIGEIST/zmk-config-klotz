@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 /* #include <nice_nano_v2-pinctrl.dtsi>
-
+*/
 / {
 	chosen {
 		zmk,kscan = &kscan0;
